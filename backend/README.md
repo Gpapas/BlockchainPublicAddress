@@ -14,6 +14,10 @@ npm install
 node server.js
 ```
 
+Set the environment variables `VONAGE_API_KEY` and `VONAGE_API_SECRET` to enable
+real phone verification. Without them, the server will run in test mode and
+accept any verification code.
+
 ## Docker
 ```
 docker buildx build --platform linux/arm64 -t bpa-backend .

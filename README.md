@@ -30,6 +30,27 @@ Repository to describe, develop, document and test the Blockchain Public Address
 * Other releases of this sub project are available in [BlockchainPublicAddress Releases](https://github.com/camaraproject/BlockchainPublicAddress/releases)
 * For changes see [CHANGELOG.md](/CHANGELOG.md)
 
+## Running the PoC
+This repository also contains a minimal backend under `backend/` and a React
+Native example in `phone-app/`.
+
+1. Install dependencies and start the backend:
+   ```bash
+   cd backend
+   npm install
+   node server.js
+   ```
+   Set `VONAGE_API_KEY` and `VONAGE_API_SECRET` if you want real SMS
+   verification.
+
+2. Run the mobile app using Expo or React Native CLI:
+   ```bash
+   cd ../phone-app
+   npm install
+   expo start
+   ```
+   The app will connect to the backend at `http://localhost:3000`.
+
 ## Contributing
 * Meetings
     * [Registration/Join](https://zoom-lfx.platform.linuxfoundation.org/meeting/99023344259?password=cb995600-56ee-48a2-ade1-607bb10487df)
